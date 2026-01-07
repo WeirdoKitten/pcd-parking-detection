@@ -134,7 +134,34 @@ python train_model.py
 
 ## 🔍 Testing/Inference
 
-### Quick Test
+### 🌐 Cara 1: Web UI (Paling Mudah - Recommended!)
+
+**Langkah 1:** Install Gradio (jika belum):
+```bash
+pip install gradio
+```
+
+**Langkah 2:** Jalankan Web App:
+```bash
+python app.py
+```
+
+**Langkah 3:** Buka browser dan akses:
+```
+http://localhost:7860
+```
+
+**Fitur Web UI:**
+- ✅ Upload gambar langsung dari browser
+- ✅ Adjust confidence threshold dengan slider
+- ✅ Lihat hasil deteksi real-time
+- ✅ Statistik lengkap ditampilkan otomatis
+- ✅ Contoh gambar built-in
+- ✅ Interface yang user-friendly
+
+---
+
+### 💻 Cara 2: Command Line (Edit File)
 
 **Langkah 1:** Buka file `detect_parking.py` dan cari baris berikut (sekitar baris 195):
 
@@ -159,11 +186,11 @@ test_image = 'path/ke/gambar/parkir_anda.png'
 python detect_parking.py
 ```
 
-### Parameter Deteksi
+---
 
-- `image_path`: Path ke gambar parkir
-- `conf_threshold`: Confidence threshold (default: 0.25)
-- `save_output`: Simpan hasil visualisasi (default: True)
+### 🐍 Cara 3: Gunakan dalam Code Python (Advanced)
+
+Buat file Python baru atau gunakan interactive mode:
 
 ## 📸 Output Deteksi
 

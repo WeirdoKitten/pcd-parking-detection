@@ -190,7 +190,7 @@ def main():
     
     # Example: Test on a validation image
     # You can change this to any image path
-    test_image = 'DataSet/yolo_dataset/test/test_3.png'
+    test_image = 'DataSet/yolo_dataset/test/test_6.png'
     
     if Path(test_image).exists():
         results = detector.detect(test_image, conf_threshold=0.3)

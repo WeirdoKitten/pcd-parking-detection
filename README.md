@@ -136,27 +136,27 @@ python train_model.py
 
 ### Quick Test
 
-```bash
-python detect_parking.py
-```
-
-### Gunakan dalam Code Python
+**Langkah 1:** Buka file `detect_parking.py` dan cari baris berikut (sekitar baris 195):
 
 ```python
-from detect_parking import ParkingDetector
+# Example: Test on a validation image
+# You can change this to any image path
+test_image = 'DataSet/yolo_dataset/test/test_3.png
+```
 
-# Initialize detector
-detector = ParkingDetector('runs/parking_detection/yolov8n_parking/weights/best.pt')
+**Langkah 2:** Ganti path gambar dengan gambar yang ingin Anda test:
 
-# Deteksi dari gambar
-results = detector.detect('path/to/parking_image.png', conf_threshold=0.3)
+```python
+test_image = 'path/ke/gambar/parkir_anda.png'
+# Contoh:
+# test_image = 'DataSet/images/5.png'
+# test_image = 'C:/Users/foto/parking_mall.jpg'
+```
 
-# Akses hasil
-print(f"Total slot parkir: {results['total_slots']}")
-print(f"Slot kosong: {results['free']}")
-print(f"Slot terisi: {results['occupied']}")
-print(f"Slot sebagian terisi: {results['partially_free']}")
-print(f"Tingkat okupansi: {results['occupancy_rate']:.1f}%")
+**Langkah 3:** Jalankan script:
+
+```bash
+python detect_parking.py
 ```
 
 ### Parameter Deteksi

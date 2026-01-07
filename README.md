@@ -63,8 +63,8 @@ parking-detection/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/parking-detection.git
-cd parking-detection
+git clone https://github.com/WeirdoKitten/pcd-parking-detection.git
+cd pcd-parking-detection
 ```
 
 ### 2. Buat Virtual Environment (Opsional tapi Disarankan)

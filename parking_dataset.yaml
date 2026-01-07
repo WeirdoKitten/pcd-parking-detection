@@ -1,0 +1,16 @@
+# Parking Space Detection Dataset Configuration
+# YOLOv8 format
+
+# Paths (relative to this file)
+path: D:/PCD/EAS/DataSet/yolo_dataset  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: val/images  # val images (relative to 'path')
+
+# Classes
+names:
+  0: free_parking
+  1: occupied_parking
+  2: partially_free_parking
+
+# Number of classes
+nc: 3
